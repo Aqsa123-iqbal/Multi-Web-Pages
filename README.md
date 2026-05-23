@@ -5,7 +5,7 @@ Html basics
 ## Screenshots of Outputs
 
 <p align="center">
-  <img src="https://github.com/Aqsa123-iqbal/Multi-Web-Pages/edit/main/blob/main/1.JPG?raw=true" width="400"/>>
+img src="1.JPG" width="500"> width="400"/>
 
 
 </p>
