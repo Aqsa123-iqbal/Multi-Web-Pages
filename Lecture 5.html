@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Lecture 5: CSS Selectors</title>
+<link rel="stylesheet" href="style.css">
+<style>
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background:#87CEEB;
+    margin:0;
+    padding:0;
+}
+
+.container{
+    width:750px;
+    margin:40px auto;
+    background:white;
+    box-shadow:0 0 12px rgba(0,0,0,0.2);
+    border-radius:5px;
+    overflow:hidden;
+}
+
+.header{
+ background:#0D3B66; /* dark blue */
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+.header h2{
+    margin:0;
+}
+
+.content{
+    padding:25px;
+}
+
+h3{
+    color:#0D3B66;
+    border-bottom:2px solid #ddd;
+    padding-bottom:5px;
+}
+
+p, ul, ol {
+    line-height: 1.6;
+}
+
+ul, ol {
+    margin-left: 20px;
+}
+
+code {
+    background: #f4f4f4;
+    padding: 2px 5px;
+    border-radius: 3px;
+    font-family: monospace;
+}
+
+.example-box {
+    padding:10px;
+    margin:10px 0;
+    border:1px solid #0D3B66;
+    border-radius:5px;
+}
+
+button {
+    background-color: #0D3B66;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #084a8f;
+}
+
+a {
+    color: #0D3B66;
+    text-decoration: none;
+    font-weight: bold;
+}
+a:hover {
+    text-decoration: underline;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="header">
+<h2>Lecture 5: CSS Selectors</h2>
+</div>
+
+<div class="content">
+
+<h3>What are CSS Selectors?</h3>
+<p>
+CSS selectors are patterns used to select HTML elements you want to style. Using selectors, you can target specific elements, classes, ids, or attributes to apply CSS rules.
+</p>
+
+<h3>Types of CSS Selectors</h3>
+
+<ul>
+<li><b>Universal Selector (*)</b> – Selects all elements.<br>
+<code>* { margin:0; padding:0; }</code>
+</li>
+
+<li><b>Type Selector</b> – Selects all elements of a specific type/tag.<br>
+<code>p { color: #0D3B66; }</code>
+</li>
+
+<li><b>Class Selector</b> – Selects all elements with a specific class.<br>
+<code>.example-box { border: 1px solid #0D3B66; }</code>
+</li>
+
+<li><b>ID Selector</b> – Selects an element with a specific id.<br>
+<code>#main-header { font-size: 24px; }</code>
+</li>
+
+<li><b>Group Selector</b> – Apply same style to multiple elements.<br>
+<code>h1, h2, h3 { color: #0D3B66; }</code>
+</li>
+
+<li><b>Attribute Selector</b> – Select elements based on attributes.<br>
+<code>a[href] { text-decoration: none; }</code>
+</li>
+
+<li><b>Pseudo-class Selector</b> – Select elements in a special state.<br>
+<code>a:hover { color: #084a8f; }</code>
+</li>
+
+<li><b>Descendant Selector</b> – Select elements inside another element.<br>
+<code>div p { color: #0D3B66; }</code>
+</li>
+</ul>
+
+<h3>Examples</h3>
+
+<div class="example-box">
+<p>This paragraph is inside a div and styled using a descendant selector.</p>
+</div>
+
+<p class="example-box">This paragraph uses a class selector.</p>
+
+<p id="special-text">This paragraph uses an ID selector.</p>
+
+<h3>CSS Example: Multiple Selectors</h3>
+<pre>
+h1, h2, h3 { color: #0D3B66; }
+p.example-box { background-color: #f0f4ff; }
+#special-text { font-weight: bold; }
+</pre>
+
+<br><br>
+<a href="home page.html">Back to Home</a> |
+<a href="lecture 4.html">Previous Lecture</a> |
+<a href="lecture 6.html">Next Lecture</a>
+</div>
+</div>
+
+</body>
+</html>

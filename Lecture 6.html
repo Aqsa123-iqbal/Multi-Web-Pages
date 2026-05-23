@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Lecture 6: CSS Box Model & Layout</title>
+<link rel="stylesheet" href="style.css">
+<style>
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background:#87CEEB;
+    margin:0;
+    padding:0;
+}
+
+.container{
+    width:750px;
+    margin:40px auto;
+    background:white;
+    box-shadow:0 0 12px rgba(0,0,0,0.2);
+    border-radius:5px;
+    overflow:hidden;
+}
+
+.header{
+    background:#0D3B66; /* dark blue */
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+.header h2{
+    margin:0;
+}
+
+.content{
+    padding:25px;
+}
+
+h3{
+    color:#0D3B66;
+    border-bottom:2px solid #ddd;
+    padding-bottom:5px;
+}
+
+p, ul, ol {
+    line-height: 1.6;
+}
+
+ul, ol {
+    margin-left: 20px;
+}
+
+.code-box {
+    background: #f4f4f4;
+    border:1px solid #0D3B66;
+    padding:10px;
+    margin:10px 0;
+    border-radius:4px;
+    font-family: monospace;
+}
+
+.example-box {
+    border:1px solid #0D3B66;
+    padding:15px;
+    margin:10px 0;
+    border-radius:5px;
+    background-color:#f0f4ff;
+}
+
+button {
+    background-color: #0D3B66;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #084a8f;
+}
+
+a {
+    color: #0D3B66;
+    text-decoration: none;
+    font-weight: bold;
+}
+a:hover {
+    text-decoration: underline;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="header">
+<h2>Lecture 6: CSS Box Model & Layout</h2>
+</div>
+
+<div class="content">
+
+<h3>CSS Box Model</h3>
+<p>
+Every HTML element is a rectangular box. The <b>CSS Box Model</b> describes the layout and spacing of these boxes. It has four parts:
+</p>
+
+<ul>
+<li><b>Content</b> – The actual content of the element (text, image, etc.)</li>
+<li><b>Padding</b> – Space between content and border</li>
+<li><b>Border</b> – Surrounds the padding (visible line)</li>
+<li><b>Margin</b> – Space outside the border, separating elements</li>
+</ul>
+
+<h4>Box Model Example</h4>
+<div class="example-box" style="width:200px; padding:15px; border:5px solid #0D3B66; margin:20px;">
+Content inside box
+</div>
+
+<p>CSS to style a box:</p>
+<div class="code-box">
+<pre>
+div {
+  width: 200px;
+  padding: 15px;
+  border: 5px solid #0D3B66;
+  margin: 20px;
+}
+</pre>
+</div>
+
+<h3>CSS Layout</h3>
+<p>
+CSS provides several methods to position elements on a page:
+</p>
+
+<ul>
+<li><b>Normal Flow</b> – Elements are stacked vertically or horizontally as per HTML structure.</li>
+<li><b>Float</b> – Moves elements left or right allowing text or inline elements to wrap.</li>
+<li><b>Positioning</b> – <code>static</code>, <code>relative</code>, <code>absolute</code>, <code>fixed</code>, <code>sticky</code></li>
+<li><b>Flexbox</b> – Modern layout method for aligning elements in rows or columns.</li>
+<li><b>Grid</b> – Two-dimensional layout system for complex designs.</li>
+</ul>
+
+<h4>Flexbox Example</h4>
+<div class="example-box" style="display:flex; gap:10px;">
+<div style="background:#0D3B66;color:white;padding:20px;">Box 1</div>
+<div style="background:#084a8f;color:white;padding:20px;">Box 2</div>
+<div style="background:#0D3B66;color:white;padding:20px;">Box 3</div>
+</div>
+
+<h4>Grid Example</h4>
+<div class="example-box" style="display:grid; grid-template-columns: 1fr 1fr 1fr; gap:10px;">
+<div style="background:#0D3B66;color:white;padding:20px;">Grid 1</div>
+<div style="background:#084a8f;color:white;padding:20px;">Grid 2</div>
+<div style="background:#0D3B66;color:white;padding:20px;">Grid 3</div>
+</div>
+
+<br>
+
+<br><br>
+<a href="home page.html">Back to Home</a> |
+<a href="lecture 5.html">Previous Lecture</a> |
+<a href="lecture 7.html">Next Lecture</a>
+
+</div>
+</div>
+
+</body>
+</html>

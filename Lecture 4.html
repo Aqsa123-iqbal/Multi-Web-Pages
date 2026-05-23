@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Lecture 4: Introduction to CSS</title>
+<link rel="stylesheet" href="style.css">
+<style>
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background:#87CEEB;
+    margin:0;
+    padding:0;
+}
+
+.container{
+    width:750px;
+    margin:40px auto;
+    background:white;
+    box-shadow:0 0 12px rgba(0,0,0,0.2);
+    border-radius:5px;
+    overflow:hidden;
+}
+
+.header{
+     background:#0D3B66; /* dark blue */
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+.header h2{
+    margin:0;
+}
+
+.content{
+    padding:25px;
+}
+
+h3{
+    color:#0D3B66;
+    border-bottom:2px solid #ddd;
+    padding-bottom:5px;
+}
+
+p, ul, ol {
+    line-height: 1.6;
+}
+
+ul, ol {
+    margin-left: 20px;
+}
+
+code {
+    background: #f4f4f4;
+    padding: 2px 5px;
+    border-radius: 3px;
+    font-family: monospace;
+}
+button {
+    background-color: #0D3B66;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #084a8f;
+}
+
+a {
+    color: #0D3B66;
+    text-decoration: none;
+    font-weight: bold;
+}
+a:hover {
+    text-decoration: underline;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="header">
+<h2>Lecture 4: Introduction to CSS</h2>
+</div>
+
+<div class="content">
+
+<h3>What is CSS?</h3>
+<p>
+CSS stands for <b>Cascading Style Sheets</b>. It is used to style HTML documents. While HTML provides the structure of a webpage, CSS controls its appearance including colors, fonts, layouts, spacing, borders, and responsive design.
+</p>
+<h3>JavaScript Logo</h3>
+
+<center><img src="css.png" alt="HTML Logo" width="200"></center>
+<h3>Advantages of CSS</h3>
+<ul>
+<li>Separates content from design</li>
+<li>Makes websites look more attractive</li>
+<li>Reduces repetition and keeps code organized</li>
+<li>Improves website loading speed</li>
+<li>Supports responsive design for different devices</li>
+</ul>
+
+<h3>Types of CSS</h3>
+<ol>
+<li><b>Inline CSS</b> – Applied directly to an element using the <code>style</code> attribute.</li>
+<li><b>Internal CSS</b> – Defined within a &lt;style&gt; tag in the HTML document.</li>
+<li><b>External CSS</b> – Written in a separate <code>.css</code> file and linked to HTML using <code>&lt;link&gt;</code>.</li>
+</ol>
+
+<h3>Basic CSS Examples</h3>
+<p>Change the color of a heading using inline CSS:</p>
+<pre>&lt;h1 style="color:#0D3B66;"&gt;Hello World&lt;/h1&gt;</pre>
+
+<p>Or using internal CSS:</p>
+<pre>
+&lt;style&gt;
+h1 {
+    color: #0D3B66;
+    font-family: Arial, sans-serif;
+}
+&lt;/style&gt;
+&lt;h1&gt;Hello World&lt;/h1&gt;
+</pre>
+
+<h3>Common CSS Properties</h3>
+<ul>
+<li><b>color</b> – Text color</li>
+<li><b>background-color</b> – Element background color</li>
+<li><b>font-size</b> – Size of text</li>
+<li><b>font-family</b> – Type of font</li>
+<li><b>margin</b> – Space outside an element</li>
+<li><b>padding</b> – Space inside an element</li>
+<li><b>border</b> – Border around an element</li>
+<li><b>width, height</b> – Size of element</li>
+<li><b>display</b> – Block, inline, inline-block, none</li>
+<li><b>text-align</b> – Left, center, right, justify</li>
+</ul>
+
+<h3>CSS Example: Button Styling</h3>
+<pre>
+button {
+    background-color: #0D3B66;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #084a8f;
+}
+</pre>
+
+
+<br><br>
+<a href="home page.html">Back to Home</a> |
+<a href="lecture 3.html">Previous Lecture</a> |
+<a href="lecture 5.html">Next Lecture</a>
+
+</div>
+</div>
+
+</body>
+</html>

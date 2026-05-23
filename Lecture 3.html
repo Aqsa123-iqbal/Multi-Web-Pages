@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Lecture 3: HTML Forms & Media</title>
+<link rel="stylesheet" href="style.css">
+<style>
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background:#87CEEB;
+    margin:0;
+    padding:0;
+}
+
+.container{
+    width:750px;
+    margin:40px auto;
+    background:white;
+    box-shadow:0 0 12px rgba(0,0,0,0.2);
+    border-radius:5px;
+    overflow:hidden;
+}
+
+.header{
+   background:#0D3B66; /* dark blue */
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+.header h2{
+    margin:0;
+}
+
+.content{
+    padding:25px;
+}
+
+h3{
+    color:#0D3B66;
+    border-bottom:2px solid #ddd;
+    padding-bottom:5px;
+}
+
+form {
+    margin-top:20px;
+}
+
+input[type=text], input[type=password], input[type=email], textarea, select {
+    width:100%;
+    padding:10px;
+    margin:8px 0 15px 0;
+    border:1px solid #ccc;
+    border-radius:4px;
+}
+
+input[type=radio], input[type=checkbox] {
+    margin-right:10px;
+}
+
+input[type=submit], input[type=reset], button {
+    background-color:#0D3B66;
+    color:white;
+    padding:10px 20px;
+    border:none;
+    border-radius:4px;
+    cursor:pointer;
+}
+
+input[type=submit]:hover, input[type=reset]:hover, button:hover {
+    background-color:#084a8f;
+}
+
+a {
+    color: #0D3B66;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+img, video, audio {
+    display:block;
+    margin:15px 0;
+    max-width:100%;
+    border-radius:5px;
+    border:1px solid #0D3B66;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="header">
+<h2>Lecture 3: HTML Forms & Media</h2>
+</div>
+
+<div class="content">
+
+<h3>HTML Forms</h3>
+
+<p>
+HTML forms are used to collect user input. A form can contain various types of input elements like text boxes, password fields, radio buttons, checkboxes, dropdowns, and submit/reset buttons.
+</p>
+
+<form action="#" method="post">
+<label for="name">Name:</label>
+<input type="text" id="name" name="name" placeholder="Enter your name">
+
+<label for="email">Email:</label>
+<input type="email" id="email" name="email" placeholder="Enter your email">
+
+<label for="password">Password:</label>
+<input type="password" id="password" name="password" placeholder="Enter your password">
+
+<label>Gender:</label><br>
+<input type="radio" name="gender" value="male" id="male"><label for="male">Male</label>
+<input type="radio" name="gender" value="female" id="female"><label for="female">Female</label><br><br>
+
+<label>Interests:</label><br>
+<input type="checkbox" name="interest" value="html" id="html"><label for="html">HTML</label>
+<input type="checkbox" name="interest" value="css" id="css"><label for="css">CSS</label>
+<input type="checkbox" name="interest" value="js" id="js"><label for="js">JavaScript</label><br><br>
+
+<label for="country">Country:</label>
+<select id="country" name="country">
+<option value="">Select Country</option>
+<option value="pakistan">Pakistan</option>
+<option value="usa">USA</option>
+<option value="uk">UK</option>
+</select>
+
+<label for="message">Message:</label>
+<textarea id="message" name="message" rows="4" placeholder="Write something..."></textarea>
+
+<input type="submit" value="Submit">
+<input type="reset" value="Reset">
+</form>
+
+<h3>HTML Media Elements</h3>
+
+<p>
+HTML allows you to add multimedia elements like images, audio, and video to web pages.
+</p>
+
+<h4>Image Example</h4>
+<img src="form.png" alt="Sample Image">
+
+<br>
+<a href="home page.html">Back to Home</a> |
+<a href="lecture 2.html">Previous Lecture</a> |
+<a href="lecture 4.html">Next Lecture</a>
+
+</div>
+</div>
+
+</body>
+</html>

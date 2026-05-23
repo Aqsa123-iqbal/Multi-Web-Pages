@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Lecture 7: Responsive Web Design</title>
+<link rel="stylesheet" href="style.css">
+<style>
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background:#87CEEB;
+    margin:0;
+    padding:0;
+}
+
+.container{
+    width:750px;
+    margin:40px auto;
+    background:white;
+    box-shadow:0 0 12px rgba(0,0,0,0.2);
+    border-radius:5px;
+    overflow:hidden;
+}
+
+.header{
+    background:#0D3B66; /* dark blue */
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+.header h2{
+    margin:0;
+}
+
+.content{
+    padding:25px;
+}
+
+h3{
+    color:#0D3B66;
+    border-bottom:2px solid #ddd;
+    padding-bottom:5px;
+}
+
+p, ul, ol {
+    line-height: 1.6;
+}
+
+ul, ol {
+    margin-left: 20px;
+}
+
+.code-box {
+    background: #f4f4f4;
+    border:1px solid #0D3B66;
+    padding:10px;
+    margin:10px 0;
+    border-radius:4px;
+    font-family: monospace;
+}
+
+.example-box {
+    border:1px solid #0D3B66;
+    padding:15px;
+    margin:10px 0;
+    border-radius:5px;
+    background-color:#f0f4ff;
+}
+
+button {
+    background-color: #0D3B66;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #084a8f;
+}
+
+a {
+    color: #0D3B66;
+    text-decoration: none;
+    font-weight: bold;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive layout example */
+.responsive-box {
+    display: flex;
+    gap:10px;
+    flex-wrap: wrap;
+}
+.responsive-box div {
+    flex: 1 1 200px;
+    background:#0D3B66;
+    color:white;
+    padding:20px;
+    text-align:center;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="header">
+<h2>Lecture 7: Responsive Web Design</h2>
+</div>
+
+<div class="content">
+
+<h3>What is Responsive Web Design?</h3>
+<p>
+Responsive Web Design (RWD) is a technique to make websites look good and usable on all devices – desktops, tablets, and smartphones. The layout and content automatically adjust to the screen size and resolution.
+</p>
+
+<h3>Why Responsive Design is Important?</h3>
+<ul>
+<li>Improves user experience on all devices</li>
+<li>Reduces bounce rate on mobile devices</li>
+<li>Essential for SEO – Google prefers mobile-friendly sites</li>
+<li>Reduces development effort by maintaining a single website for all devices</li>
+</ul>
+
+<h3>Techniques for Responsive Design</h3>
+<ul>
+<li><b>Fluid Grids</b> – Layouts use percentages instead of fixed pixels.</li>
+<li><b>Flexible Images</b> – Images resize automatically using max-width:100%.</li>
+<li><b>Media Queries</b> – CSS rules that apply only on specific screen sizes.</li>
+<li><b>Viewport Meta Tag</b> – Ensures proper scaling on mobile devices.</li>
+</ul>
+
+<h3>Example: Responsive Flexbox Layout</h3>
+<div class="responsive-box">
+<div>Box 1</div>
+<div>Box 2</div>
+<div>Box 3</div>
+</div>
+
+<p>
+CSS used for responsive flexbox:
+</p>
+<div class="code-box">
+<pre>
+.responsive-box {
+  display: flex;
+  gap:10px;
+  flex-wrap: wrap;
+}
+.responsive-box div {
+  flex: 1 1 200px;
+  background:#0D3B66;
+  color:white;
+  padding:20px;
+  text-align:center;
+}
+</pre>
+</div>
+
+<h3>Media Query Example</h3>
+<p>Change background color on smaller screens:</p>
+<div class="code-box">
+<pre>
+@media (max-width: 600px) {
+  body {
+    background-color: #dce6f2;
+  }
+}
+</pre>
+</div>
+
+<br>
+<br><br>
+<a href="home page.html">Back to Home</a> |
+<a href="lecture 6.html">Previous Lecture</a> |
+<a href="lecture 8.html">Next Lecture</a>
+
+</div>
+</div>
+
+</body>
+</html>
